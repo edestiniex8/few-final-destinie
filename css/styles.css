@@ -25,11 +25,14 @@ li {
 }
 
 .xl-photo {
-  width: 100%;
-  height: 100vh;
-  background-image: url("https://i.ibb.co/MCgcGG1/IMG-1448.jpg");
-  position: relative;
-  z-index: -1;
+background-image: black;
+width: 100%;
+height: 550px;
+background-size: cover;
+background-position: center center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .illustration {
@@ -104,3 +107,11 @@ li {
   padding: 10px;
   border: 2px solid black;
 }
+
+@media (min-width: 550px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 50px 100px;
+    grid-gap: 10px;
+  }
